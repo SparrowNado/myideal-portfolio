@@ -37,7 +37,7 @@ header {
    
     color: var(--white);
     /* padding: 20px 200px; */
-    background-image: url(assets/images/Skyline.png);
+    background-image: url('../assets/images/Skyline.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
