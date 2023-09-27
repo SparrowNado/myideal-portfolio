@@ -29,7 +29,8 @@ button {
 }
 
 button:hover {
-    background-color: hsl(217, 91%, 40%);
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
     cursor: pointer;
 }
 
@@ -509,13 +510,13 @@ footer {
 textarea {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     outline: none;
     resize: none;
     border: none;
     padding: 1em;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: #2b2927;
   }
   
   .msg {
@@ -544,6 +545,18 @@ textarea {
   .ftrhead {
     font-size: 35px;
   }
+
+
+.formbutton{
+    width: 50%;
+    height: 50%;
+    font-size: 24px;
+    background-color: #F0DB4F;
+    color: #000;
+}
+
+
+
   
   .ftrhead::after,
   .ftrtxt::after {
