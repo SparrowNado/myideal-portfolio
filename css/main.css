@@ -5,6 +5,22 @@
     padding: 0;
 }
 
+
+@media (max-width: 700px) {
+  button, header, .header-main,.navbar,.topnavbar li,.topnavbar a, .header-top, .typewriter, .strongname, .header-info, .contactgit, .header-img, .profile , .main-info-container , .cards-container, .box, .descriptor, .main-info, .main-info h2 , .cards-container div, .projects,
+  .project-card, .project-card h3 , .project-card p , .project-card a , .cardpic, .footh, .footer,
+   div.right,div.left ,textarea , .msg,div.bottom, .ftrtxt,.ftrhead,.formbutton,  .ftrlinks, hr, svg,
+  ::placeholder,  #start,#end{   
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -217,18 +233,21 @@ header {
     padding-right: 350px;
     padding-top: 50px;
     border-radius: 50%;
+    /* background-color: black; */
     
 }
 
 
 .profile{
   border-radius: 50%;
+  background: none;
+  /* background-color: black; */
 }
 
 
 
 .header-main .header-img img {
-    background-color: var(--light-gray);
+    /* background-color: var(--light-gray); */
 }
 
 
