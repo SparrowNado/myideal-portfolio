@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/3d0c5fd0d7.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/images/LogoforPortfolio(tab).png" type="image/x-icon">
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
     <title>Christian Gabriel D. Ramoso Portfolio</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                 <p> <strong class="strongname">Striving to get better Everyday at My Craft.</strong></p>
                 <br>
                 <br>
-                <button id="btn"> Download as PDF </button> 
+                <!-- <button id="btn"> Download as PDF </button>  -->
                 <br>
                 <br>
                 <h2><strong class="">Visit My GitHub Page</strong></h2>
@@ -192,20 +193,22 @@
             <span class="ftrtxt">Copyright @Christian Gabriel D.Ramoso 2023</span>
           </div>
 
-          <script> 
-            let button = document.getElementById("btn"); 
-            button.addEventListener("click", function () { 
-                let doc = new jsPDF(); 
-                let pdf = document.querySelector(".GFG"); 
-                doc.fromHTML(pdf); 
-                doc.save("GFG.pdf"); 
-            }); 
-        </script> 
+        
 
 
 
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let button = document.getElementById("btn");
+            button.addEventListener("click", function () {
+                let doc = new jsPDF();
+                let htmlContent = document.html;
+                doc.fromHTML(htmlContent, 15, 15);
+                doc.save("christiangabrieldramoso-portfolio.pdf");
+            });
+        });
+    </script>
 
-    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js”></script>
 </body>
 </html>
