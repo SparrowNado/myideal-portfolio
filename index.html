@@ -31,6 +31,11 @@
                 <h1>  I am <strong class="strongname">Christian Gabriel D.Ramoso </strong></h1>
                 <p >Aspiring to be a <strong class="strongname"> Developer/Front End Developer. </strong></p> 
                 <p> <strong class="strongname">Striving to get better Everyday at My Craft.</strong></p>
+                <br>
+                <br>
+                <button id="btn"> Download as PDF </button> 
+                <br>
+                <br>
                 <h2><strong class="">Visit My GitHub Page</strong></h2>
                 </div>
                 <div class="contactgit">
@@ -187,10 +192,20 @@
             <span class="ftrtxt">Copyright @Christian Gabriel D.Ramoso 2023</span>
           </div>
 
-         
+          <script> 
+            let button = document.getElementById("btn"); 
+            button.addEventListener("click", function () { 
+                let doc = new jsPDF(); 
+                let pdf = document.querySelector(".GFG"); 
+                doc.fromHTML(pdf); 
+                doc.save("GFG.pdf"); 
+            }); 
+        </script> 
 
 
 
     </footer>
+
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js”></script>
 </body>
 </html>
